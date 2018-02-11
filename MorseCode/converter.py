@@ -7,11 +7,11 @@ def convert(word):
              ".--.", "--.-", ".-.",
              "...", "-", "..-",
              "...-", ".--", "-..-",
-             "-.--", "--.."]
-    alphabet = "abcdefghijklmnopqrstuvwxyz"
+             "-.--", "--..", " "]
+    alphabet = "abcdefghijklmnopqrstuvwxyz "
     output = []
     for x in word:
         output.append(codes[alphabet.index(x)])
     print(output)
 
-convert(input())
+convert(input("Enter a phrase to convert: "))
